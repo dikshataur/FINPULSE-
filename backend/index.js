@@ -21,9 +21,13 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://finpulse-1-cspe.onrender.com", "https://dashboard-wnk8.onrender.com", "https://finpulse-dcml.onrender.com"],
+    origin: [
+      "https://finpulse-1-cspe.onrender.com",
+      "https://dashboard-wnk8.onrender.com",
+      "https://finpulse-dcml.onrender.com",
+    ],
     credentials: true,
-  })
+  }),
 );
 app.use(bodyParser.json());
 
@@ -39,6 +43,9 @@ app.use(
 
     cookie: {
       maxAge: 1000 * 60 * 60 * 24 * 14,
+      httpOnly: true,
+      secure: true,
+      sameSite: "none",
     },
   }),
 );
@@ -51,7 +58,7 @@ const isAuthenticated = (req, res, next) => {
       message: "Please login first",
     });
   }
-}
+};
 
 app.get("/current-user", isAuthenticated, (req, res) => {
   res.json(req.session.user);
@@ -156,7 +163,7 @@ app.post("/newOrder", isAuthenticated, async (req, res) => {
 
     await newOrder.save();
 
-    // 2. check existing holding 
+    // 2. check existing holding
     let holding = await HoldingsModel.findOne({ name });
 
     if (mode === "BUY") {
