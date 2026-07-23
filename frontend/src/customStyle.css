@@ -1,0 +1,22 @@
+#supportHero{
+  background-color: rgb(56, 126, 209);
+  color: white; 
+}
+
+#supportHero a{
+    color: white;
+    margin-right: 1.5rem;
+}
+#supportHero input{
+    width: 90%;
+    border-radius: 5px;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border: none;
+}
+
+#supportWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+}
