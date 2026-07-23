@@ -12,7 +12,7 @@ const BuyActionWindow = ({ uid, mode }) => {
   const { closeBuyWindow } = useContext(GeneralContext);
 
   const handleOrderClick = () => {
-    axios.post("http://localhost:8080/newOrder", {
+    axios.post("https://finpulse-dcml.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

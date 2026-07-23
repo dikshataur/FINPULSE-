@@ -21,7 +21,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: ["https://finpulse-1-cspe.onrender.com", "https://dashboard-wnk8.onrender.com", "https://finpulse-dcml.onrender.com"],
     credentials: true,
   })
 );

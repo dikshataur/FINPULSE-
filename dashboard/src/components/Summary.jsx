@@ -6,7 +6,7 @@ const Summary = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/current-user", {
+      .get("https://finpulse-dcml.onrender.com/current-user", {
         withCredentials: true,
       })
       .then((res) => {

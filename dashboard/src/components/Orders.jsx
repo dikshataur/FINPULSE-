@@ -7,7 +7,7 @@ const Orders = () => {
 
   useEffect(() => {
     axios
-    .get("http://localhost:8080/allOrders", {
+    .get("https://finpulse-dcml.onrender.com/allOrders", {
       withCredentials: true,
     })
     .then((res) => {

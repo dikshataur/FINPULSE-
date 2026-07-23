@@ -18,13 +18,13 @@ const Menu = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:8080/logout",
+        "https://finpulse-dcml.onrender.com/logout",
         {},
         {
           withCredentials: true,
         },
       );
-      window.location.href = "http://localhost:5173";
+      window.location.href = "https://finpulse-1-cspe.onrender.com";
     } catch (error) {
       console.log("Logout error:", error);
     }
@@ -32,7 +32,7 @@ const Menu = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/current-user", {
+      .get("https://finpulse-dcml.onrender.com/current-user", {
         withCredentials: true,
       })
       .then((res) => {

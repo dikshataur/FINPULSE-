@@ -7,7 +7,7 @@ const Positions = () => {
   const [ allPositions, setAllPositions ] = useState([]);
 
   useEffect(() =>{
-    axios.get("http://localhost:8080/allPositions",{
+    axios.get("https://finpulse-dcml.onrender.com/allPositions",{
       withCredentials: true,
     })
     .then((res) =>{
