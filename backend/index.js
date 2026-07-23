@@ -146,7 +146,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.get("/allHoldings", isAuthenticated, async (req, res) => {
+app.get("/allHoldings", async (req, res) => {
   let allHoldings = await HoldingsModel.find({});
   res.json(allHoldings);
 });
