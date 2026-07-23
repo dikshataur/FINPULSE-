@@ -124,8 +124,18 @@ app.post("/login", async (req, res) => {
       email: user.email,
     };
 
-    res.status(200).json({
-      message: "Login successful",
+    req.session.save((err) => {
+      if (err) {
+        console.log("Session save error:", err);
+
+        return res.status(500).json({
+          message: "Session save failed",
+        });
+      }
+
+      res.status(200).json({
+        message: "Login successful",
+      });
     });
   } catch (error) {
     console.log("Error during login:", error);
