@@ -230,6 +230,10 @@ app.post("/logout", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("FinPulse Backend is running!");
+});
+
 app.listen(PORT, () => {
   console.log("App started!");
   mongoose.connect(url);
