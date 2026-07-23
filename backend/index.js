@@ -61,8 +61,20 @@ const isAuthenticated = (req, res, next) => {
   }
 };
 
-app.get("/current-user", isAuthenticated, (req, res) => {
-  res.json(req.session.user);
+// app.get("/current-user", isAuthenticated, (req, res) => {
+//   res.json(req.session.user);
+// });
+app.get("/current-user", (req, res) => {
+  console.log("SESSION:", req.session);
+  console.log("COOKIE:", req.headers.cookie);
+
+  if (req.session.user) {
+    res.json(req.session.user);
+  } else {
+    res.status(401).json({
+      message: "Please login first",
+    });
+  }
 });
 
 app.post("/register", async (req, res) => {
