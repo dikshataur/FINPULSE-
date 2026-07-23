@@ -19,7 +19,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://finpulse-dcml.onrender.com//register", {
+      const response = await fetch("https://finpulse-dcml.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
