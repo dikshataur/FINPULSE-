@@ -18,6 +18,7 @@ const PORT = process.env.PORT || 8080;
 const url = process.env.MONGO_URL;
 
 const app = express();
+app.set("trust proxy", 1);
 
 app.use(
   cors({
@@ -146,7 +147,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.get("/allHoldings", async (req, res) => {
+app.get("/allHoldings", isAuthenticated, async (req, res) => {
   let allHoldings = await HoldingsModel.find({});
   res.json(allHoldings);
 });
