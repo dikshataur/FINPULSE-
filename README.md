@@ -253,41 +253,65 @@ This allows authenticated sessions to work between separately deployed frontend,
 
 ## 📸 Screenshots
 
-### 🏠 Landing Page (./screenshots/home.png)
+### 🏠 Landing Page
+
+![Landing Page](./screenshots/home.png)
 
 ---
 
-### 📝 Signup Page (screenshots/signup.png)
+### 📝 Signup Page 
+
+![Signup Page](./screenshots/signup.png)
 
 ---
 
-### 🔐 Login Page (screenshots/login.png)
+### 🔐 Login Page 
+
+![Login Page](./screenshots/login.png)
 
 ---
 
-### 📊 Dashboard – Summary (screenshots/summary.png)
+### 📊 Dashboard – Summary 
+
+![Dashboard Summary](./screenshots/summary.png)
 
 ---
 
 ### 📈 Holdings (screenshots/holdings.png)
+
+![Holdings](./screenshots/holdings.png)
+
 ### 📈 Holdings Graph (screenshots/holding graph.png)
+
+![Holdings Graph](./screenshots/holding%20graph.png)
 
 ---
 
-### 📉 Positions (./screenshots/positions.png)
+### 📉 Positions
+
+![Positions](./screenshots/positions.png)
 
 ---
 
 ### 📋 Orders (screenshots/orders.png)
 
+![Orders](./screenshots/orders.png)
+
 ---
  
 ### 💰 Funds (screenshots/funds.png)
 
+![Funds](./screenshots/funds.png)
+
 ---
 
 ### 👀 Watchlist (screenshots/watchlist.png)
+
+![Watchlist](./screenshots/watchlist.png)
+
 ### 👀 Watchlist Graph (screenshots/watchlist graph.png)
+
+![Watchlist Graph](./screenshots/watchlist%20graph.png)
 
 ---
 
