@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function OpenAccount() {
+  const navigate = useNavigate();
+  
   return (
     <div className="container p-5 mb-5">
       <div className="row text-center">
