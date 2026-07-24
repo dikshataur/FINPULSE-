@@ -2,36 +2,35 @@ import React from "react";
 
 function Pricing() {
   return (
-    <section className="container pricing-section">
-      <div className="pricing-content">
-        <div className="pricing-description">
-          <h2>Unbeatable pricing</h2>
-
+    <div className="container py-5">
+      <div className="row">
+        <div className="col-4">
+          <h2 className="mb-4">Unbeatable pricing</h2>
           <p>
             We pioneered the concept of discount broking and price transparency
             in India. Flat fees and no hidden charges.
           </p>
-
-          <a href="">
-            See pricing <i className="fa-solid fa-arrow-right-long"></i>
+          <a href="" style={{ textDecoration: "none" }}>
+            See pricing <i class="fa-solid fa-arrow-right-long"></i>
           </a>
         </div>
-
-        <div className="pricing-cards">
-          <div className="pricing-card">
-            <h1>₹0</h1>
-            <p>
-              Free equity delivery and direct mutual funds
-            </p>
-          </div>
-
-          <div className="pricing-card">
-            <h1>₹20</h1>
-            <p>Intraday and F&O</p>
+        <div className="col-2"></div>
+        <div className="col-6 text-center">
+          <div className="row">
+            <div className="col p-3 border">
+              <h1 className="mb-4">₹0</h1>
+              <p>
+                Free equity delivery and <br /> direct mutual funds
+              </p>
+            </div>
+            <div className="col p-3 border">
+              <h1 className="mb-4">₹20</h1>
+              <p>Intraday and F&O</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
