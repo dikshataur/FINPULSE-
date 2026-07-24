@@ -139,9 +139,11 @@ app.post("/login", async (req, res) => {
     };
 
 
-console.log("SESSION ID:", req.sessionID);
-console.log("SESSION:", req.session);
-
+res.cookie("test-cookie", "hello", {
+  httpOnly: false,
+  secure: true,
+  sameSite: "none",
+});
 
     req.session.save((err) => {
       if (err) {
