@@ -8,9 +8,9 @@ The project is built using a separate frontend, dashboard, and backend architect
 
 ## 🚀 Live Demo
 
-* 🌐 **Landing Page:** [Add your deployed frontend link here]
-* 📊 **Dashboard:** [Add your deployed dashboard link here]
-* ⚙️ **Backend API:** [Add your deployed backend link here]
+* 🌐 **Landing Page:** [https://finpulse-1-cspe.onrender.com]
+* 📊 **Dashboard:**  [https://dashboard-wnk8.onrender.com]
+* ⚙️ **Backend API:** [https://finpulse-dcml.onrender.com]
 
 ---
 
@@ -253,7 +253,7 @@ This allows authenticated sessions to work between separately deployed frontend,
 
 ## 📸 Screenshots
 
-### 🏠 Landing Page (screenshots/home.png)
+### 🏠 Landing Page (./screenshots/home.png)
 
 ---
 
@@ -274,7 +274,7 @@ This allows authenticated sessions to work between separately deployed frontend,
 
 ---
 
-### 📉 Positions (screenshots/positions.png)
+### 📉 Positions (./screenshots/positions.png)
 
 ---
 
