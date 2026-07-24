@@ -138,6 +138,11 @@ app.post("/login", async (req, res) => {
       email: user.email,
     };
 
+
+console.log("SESSION ID:", req.sessionID);
+console.log("SESSION:", req.session);
+
+
     req.session.save((err) => {
       if (err) {
         console.log("Session save error:", err);
