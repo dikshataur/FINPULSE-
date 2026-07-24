@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -31,7 +33,7 @@ function Signup() {
 
       setMessage(data.message);
       if (response.ok) {
-        navigate("/dashboard");
+        navigate("/login");
       }
     } catch (error) {
       setMessage("Something went wrong");
