@@ -33,7 +33,7 @@ function Signup() {
 
       setMessage(data.message);
       if (response.ok) {
-        navigate("/dashboard");
+        navigate("/login");
       }
     } catch (error) {
       setMessage("Something went wrong");
