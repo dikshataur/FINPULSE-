@@ -33,7 +33,7 @@ function Login() {
       setMessage(data.message);
 
       if (response.ok) {
-        window.location.href = "https://dashboard-wnk8.onrender.com"; // if login is successful it will take user into dashboard
+        // window.location.href = "https://dashboard-wnk8.onrender.com"; // if login is successful it will take user into dashboard
       }
     } catch (error) {
       setMessage("Something went wrong");
