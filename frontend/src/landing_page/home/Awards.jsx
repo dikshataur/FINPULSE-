@@ -2,37 +2,46 @@ import React from "react";
 
 function Awards() {
   return (
-    <div className="container">
-      <div className="row align-items-center">
-        <div className="col-6 p-5">
-          <img src="assets/largestBroker.svg" />
+    <section className="container awards-section">
+      <div className="awards-content">
+        <div>
+          <img
+            src="/assets/largestBroker.svg"
+            alt="Largest Broker"
+            className="awards-image"
+          />
         </div>
-        <div className="col-6 p-5">
+
+        <div>
           <h2>Largest stock broker in India</h2>
-          <p className="mb-5">
+
+          <p>
             2+ million Zerodha clients contribute to over 15% of all retail
-            order volumes in India daily by trading and inversting in:
+            order volumes in India daily by trading and investing in:
           </p>
-          <div className="row mb-3">
-            <div className="col-6">
-              <ul>
-                <li className="mb-3">Futures and Options</li>
-                <li className="mb-3">Commodity derivaties</li>
-                <li className="mb-3">Currency derivaties</li>
-              </ul>
-            </div>
-            <div className="col-6">
-              <ul>
-                <li className="mb-3">Stock & IPOs</li>
-                <li className="mb-3">Direct mutual funds</li>
-                <li className="mb-3">Bonds and Govt. Securities</li>
-              </ul>
-            </div>
+
+          <div className="awards-lists">
+            <ul>
+              <li>Futures and Options</li>
+              <li>Commodity derivatives</li>
+              <li>Currency derivatives</li>
+            </ul>
+
+            <ul>
+              <li>Stocks & IPOs</li>
+              <li>Direct mutual funds</li>
+              <li>Bonds and Govt. Securities</li>
+            </ul>
           </div>
-          <img src="assets/pressLogos.png" style={{ width: "90%" }} />
+
+          <img
+            src="/assets/pressLogos.png"
+            alt="Press Logos"
+            className="press-logos"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

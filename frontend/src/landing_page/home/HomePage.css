@@ -1,0 +1,332 @@
+
+.home-section {
+width: 100%;
+}
+
+
+/* hero */
+.home-hero {
+padding: 70px 20px;
+margin-bottom: 50px;
+text-align: center;
+}
+
+.home-hero-image {
+width: 100%;
+max-width: 1100px;
+height: auto;
+display: block;
+margin: 0 auto 50px;
+}
+
+.home-hero h2 {
+font-size: 2rem;
+margin-top: 30px;
+}
+
+.home-hero p {
+font-size: 1.1rem;
+margin: 20px 0 30px;
+}
+
+.signup-btn {
+width: 200px;
+max-width: 100%;
+}
+
+
+/* awards  */
+.awards-section {
+padding: 70px 20px;
+}
+
+.awards-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 70px;
+align-items: center;
+}
+
+.awards-image {
+width: 100%;
+max-width: 550px;
+display: block;
+margin: auto;
+}
+
+.awards-content h2 {
+margin-bottom: 25px;
+}
+
+.awards-content p {
+line-height: 1.7;
+color: #6c757d;
+}
+
+.awards-lists {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+margin: 30px 0;
+}
+
+.awards-lists ul {
+padding-left: 20px;
+}
+
+.awards-lists li {
+margin-bottom: 15px;
+}
+
+.press-logos {
+width: 90%;
+max-width: 500px;
+}
+
+/* Stats  */
+.stats-section {
+padding: 70px 20px;
+}
+
+.stats-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 70px;
+align-items: center;
+}
+
+.stats-text h2 {
+margin-bottom: 40px;
+}
+
+.stats-text h5 {
+margin-top: 25px;
+}
+
+.stats-text p {
+color: #6c757d;
+line-height: 1.7;
+}
+
+.ecosystem-image {
+width: 100%;
+max-width: 600px;
+display: block;
+margin: auto;
+}
+
+.stats-links {
+text-align: center;
+margin-top: 25px;
+}
+
+.stats-links a {
+text-decoration: none;
+margin: 0 15px;
+}
+
+/* pricing  */
+.pricing-section {
+padding: 70px 20px;
+}
+
+.pricing-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 80px;
+align-items: center;
+}
+
+.pricing-description p {
+color: #6c757d;
+line-height: 1.7;
+}
+
+.pricing-cards {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.pricing-card {
+padding: 30px 20px;
+border: 1px solid #dee2e6;
+text-align: center;
+}
+
+.pricing-card h1 {
+margin-bottom: 25px;
+}
+
+.pricing-card p {
+line-height: 1.6;
+}
+
+
+/* education */
+.education-section {
+padding: 70px 20px;
+margin: 50px 0;
+}
+
+.education-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 80px;
+align-items: center;
+}
+
+.education-image {
+width: 70%;
+max-width: 500px;
+display: block;
+margin: auto;
+}
+
+.education-content h2 {
+margin-bottom: 35px;
+}
+
+.education-content p {
+color: #6c757d;
+line-height: 1.7;
+margin-top: 25px;
+}
+
+.education-content a {
+text-decoration: none;
+}
+
+
+/* TABLET */
+@media (max-width: 991px) {
+.awards-content,
+.stats-content,
+.pricing-content,
+.education-content {
+gap: 40px;
+}
+
+.home-hero {
+padding-top: 50px;
+}
+
+.home-hero h2 {
+font-size: 1.8rem;
+}
+
+.awards-section,
+.stats-section,
+.pricing-section,
+.education-section {
+padding: 50px 20px;
+}
+
+.stats-links a {
+display: block;
+margin: 15px 0;
+}
+}
+
+
+/* MOBILE */
+@media (max-width: 767px) {
+.home-hero {
+padding: 35px 15px;
+margin-bottom: 20px;
+}
+
+.home-hero-image {
+margin-bottom: 35px;
+}
+
+.home-hero h2 {
+font-size: 1.6rem;
+}
+
+.home-hero p {
+font-size: 1rem;
+line-height: 1.6;
+}
+
+.signup-btn {
+width: 100%;
+max-width: 250px;
+}
+
+.awards-content,
+.stats-content,
+.pricing-content,
+.education-content {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+.awards-section,
+.stats-section,
+.pricing-section,
+.education-section {
+padding: 40px 15px;
+}
+
+.awards-image {
+max-width: 450px;
+}
+
+.awards-lists {
+gap: 10px;
+}
+
+.press-logos {
+width: 100%;
+}
+
+.stats-text h2,
+.pricing-description h2,
+.education-content h2 {
+font-size: 1.7rem;
+}
+
+.ecosystem-image {
+width: 100%;
+}
+
+.pricing-cards {
+grid-template-columns: 1fr 1fr;
+}
+
+.education-image {
+width: 85%;
+}
+
+.stats-links a {
+display: block;
+margin: 15px 0;
+}
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+.awards-lists {
+grid-template-columns: 1fr;
+}
+
+.pricing-cards {
+grid-template-columns: 1fr;
+}
+
+.home-hero h2 {
+font-size: 1.4rem;
+}
+
+.home-hero p {
+font-size: 0.95rem;
+}
+
+.awards-content h2,
+.stats-text h2,
+.pricing-description h2,
+.education-content h2 {
+font-size: 1.5rem;
+}
+}

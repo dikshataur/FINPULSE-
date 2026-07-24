@@ -1,0 +1,195 @@
+/* hero */
+.about-hero {
+padding-top: 60px;
+}
+
+.about-hero-title {
+text-align: center;
+font-size: 2rem;
+font-weight: 500;
+line-height: 1.5;
+margin-bottom: 60px;
+}
+
+.about-hero-content {
+border-top: 1px solid #dee2e6;
+padding: 60px 40px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+}
+
+.about-hero-content p {
+color: #6c757d;
+line-height: 1.8;
+font-size: 1.1rem;
+margin-bottom: 25px;
+}
+
+.about-hero-content br {
+display: none;
+}
+
+.about-hero-content a {
+color: #387ed1;
+}
+
+
+/* team */
+
+.team-section {
+border-top: 1px solid #dee2e6;
+padding: 50px 40px;
+margin-bottom: 50px;
+}
+
+.team-title {
+text-align: center;
+margin-bottom: 60px;
+font-size: 2.2rem;
+}
+
+.team-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: center;
+}
+
+.team-member {
+text-align: center;
+color: #6c757d;
+}
+
+.team-member img {
+width: 45%;
+max-width: 220px;
+aspect-ratio: 1;
+object-fit: cover;
+border-radius: 50%;
+}
+
+.team-member h4 {
+margin-top: 20px;
+color: #424242;
+}
+
+.team-member h6 {
+color: #6c757d;
+}
+
+.team-description {
+color: #6c757d;
+line-height: 1.9;
+font-size: 1.1rem;
+}
+
+.team-description p {
+margin-bottom: 22px;
+}
+
+.team-description a {
+color: #387ed1;
+text-decoration: none;
+}
+
+
+/* TABLET */
+
+
+@media (max-width: 991px) {
+.about-hero {
+padding-top: 40px;
+}
+
+.about-hero-title {
+font-size: 1.7rem;
+}
+
+.about-hero-content,
+.team-content {
+gap: 35px;
+padding: 40px 20px;
+}
+
+.about-hero-content p,
+.team-description {
+font-size: 1rem;
+}
+
+.team-member img {
+width: 55%;
+}
+}
+
+
+/* MOBILE */
+
+
+@media (max-width: 767px) {
+.about-hero {
+padding-top: 25px;
+}
+
+.about-hero-title {
+font-size: 1.4rem;
+line-height: 1.6;
+margin-bottom: 35px;
+}
+
+.about-hero-content {
+grid-template-columns: 1fr;
+padding: 30px 15px;
+gap: 10px;
+}
+
+.about-hero-content p {
+font-size: 0.95rem;
+line-height: 1.8;
+margin-bottom: 22px;
+}
+
+.team-section {
+padding: 35px 15px;
+margin-bottom: 30px;
+}
+
+.team-title {
+font-size: 1.8rem;
+margin-bottom: 40px;
+}
+
+.team-content {
+grid-template-columns: 1fr;
+gap: 35px;
+padding: 0;
+}
+
+.team-member img {
+width: 55%;
+max-width: 180px;
+}
+
+.team-description {
+font-size: 0.95rem;
+line-height: 1.8;
+}
+}
+
+
+/* SMALL MOBILE */
+
+
+@media (max-width: 480px) {
+.about-hero-title {
+font-size: 1.25rem;
+}
+
+.team-title {
+font-size: 1.6rem;
+}
+
+.team-member img {
+width: 60%;
+}
+}

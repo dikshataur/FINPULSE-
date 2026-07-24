@@ -1,0 +1,104 @@
+/* Pricing */
+
+.pricing-hero {
+  margin-top: 50px;
+}
+
+.pricing-heading {
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.pricing-heading h2 {
+  font-size: 1.8rem;
+}
+
+.pricing-plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.pricing-plan {
+  padding: 30px 20px;
+}
+
+.pricing-plan img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.pricing-plan h3 {
+  font-size: 1.3rem;
+}
+
+.pricing-plan p {
+  color: #6c757d;
+  line-height: 1.7;
+}
+
+
+/* Brokerage */
+
+.brokerage-section {
+  border-top: 1px solid #dee2e6;
+  padding: 50px 20px;
+}
+
+.brokerage-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+}
+
+.brokerage-list {
+  color: #6c757d;
+  line-height: 2;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .pricing-plans {
+    gap: 15px;
+  }
+
+  .pricing-plan {
+    padding: 20px 10px;
+  }
+
+  .brokerage-content {
+    gap: 30px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .pricing-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .pricing-plans {
+    grid-template-columns: 1fr;
+    padding: 30px 15px;
+  }
+
+  .pricing-plan {
+    padding: 25px 15px;
+  }
+
+  .brokerage-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

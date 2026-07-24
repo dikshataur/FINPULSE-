@@ -11,27 +11,36 @@ function LeftSection({
 }) {
   return (
     <div className="container">
-      <div className="row mt-5 mb-5 d-flex gap-5 border-tp">
-        <div className="col p-5">
-          <img src={imageUrl} />
+      <div className="product-section">
+        <div>
+          <img
+            src={imageUrl}
+            alt={productName}
+            className="product-image"
+          />
         </div>
-        <div className="col p-5">
+
+        <div className="product-description">
           <h2>{productName}</h2>
           <p>{productDesc}</p>
-          <div className="d-flex gap-4 my-4">
-            <a href={tryDemo} className="text-decoration-none">
-              Try Demo <i class="fa-solid fa-arrow-right-long"> </i>
+
+          <div className="product-links">
+            <a href={tryDemo}>
+              Try Demo <i className="fa-solid fa-arrow-right-long"></i>
             </a>
-            <a href={learnMore} className="text-decoration-none">
-              Learn More <i class="fa-solid fa-arrow-right-long"> </i>
+
+            <a href={learnMore}>
+              Learn More <i className="fa-solid fa-arrow-right-long"></i>
             </a>
           </div>
-          <div className="d-flex gap-4">
-            <a href=''>
-              <img src={googlePlay} alt="Google Play"/>
+
+          <div className="app-badges">
+            <a href="">
+              <img src={googlePlay} alt="Google Play" />
             </a>
-            <a href=''>
-              <img src={appStore} alt="Google Play"/>
+
+            <a href="">
+              <img src={appStore} alt="App Store" />
             </a>
           </div>
         </div>

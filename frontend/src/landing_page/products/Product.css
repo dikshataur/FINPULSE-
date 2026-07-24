@@ -1,0 +1,188 @@
+/* Product Hero */
+
+.product-hero {
+  padding: 60px 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.product-hero h2 {
+  font-size: 1.8rem;
+}
+
+.product-hero h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+
+/* Product Sections */
+
+.product-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 30px;
+  margin: 30px auto;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}
+
+.product-section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+.product-section p {
+  color: #6c757d;
+  line-height: 1.7;
+}
+
+.product-links {
+  display: flex;
+  gap: 30px;
+  margin: 25px 0;
+}
+
+.product-links a,
+.product-description a {
+  text-decoration: none;
+}
+
+.app-badges {
+  display: flex;
+  gap: 20px;
+}
+
+.app-badges img {
+  width: 130px;
+}
+
+
+/* Universe */
+
+.universe-section {
+  padding: 60px 20px;
+}
+
+.universe-heading {
+  text-align: center;
+}
+
+.universe-heading h2 {
+  font-size: 1.8rem;
+}
+
+.universe-heading p {
+  color: #6c757d;
+}
+
+.universe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.universe-item img {
+  width: 50%;
+  max-width: 180px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.universe-item p {
+  color: #6c757d;
+  margin-top: 15px;
+}
+
+.universe-signup {
+  display: block;
+  width: 180px;
+  margin: 60px auto 20px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .product-section {
+    gap: 35px;
+    padding: 45px 20px;
+  }
+
+  .product-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .universe-grid {
+    gap: 35px 15px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .product-hero {
+    padding: 40px 15px;
+  }
+
+  .product-hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-hero h5 {
+    font-size: 1rem;
+  }
+
+  .product-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 35px 15px;
+    margin: 10px auto;
+  }
+
+  .product-section.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .product-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .product-links {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .app-badges img {
+    width: 120px;
+  }
+
+  .universe-section {
+    padding: 40px 15px;
+  }
+
+  .universe-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .universe-item img {
+    width: 45%;
+  }
+
+  .universe-signup {
+    width: 200px;
+  }
+}
