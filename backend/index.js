@@ -138,13 +138,6 @@ app.post("/login", async (req, res) => {
       email: user.email,
     };
 
-
-res.cookie("test-cookie", "hello", {
-  httpOnly: false,
-  secure: true,
-  sameSite: "none",
-});
-
     req.session.save((err) => {
       if (err) {
         console.log("Session save error:", err);
